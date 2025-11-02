@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manejo Formulario</title>
+</head>
+<body>
+<h1> Formulario de login</h1>
+<h1> Curso de Servlet</h1>
+
+<a href="/holamundo/holaServlet?nombre=Elvis">Conectarme al servidor</a>
+<br>
+<a href="/holamundo/holaServlet?id=1596">Vamos a enviar el id de usuarios</a>
+<br>
+<a href="/holamundo/parametros?id=12">enviando el id</a>
+
+
+<div>
+    <form action="/formulario/servletFormulario" method="post">
+        <div>
+            <label for = "usuario"> Ingrese el usuario</label>
+            <input type ="text" id = "usuario" name = "usuario">
+        </div>
+        <div>
+            <label for = "password"> Ingrese la contraseña</label>
+            <input type ="password" id = "password" name = "password">
+        </div>
+
+        //Se añaden parámetros de la tarea
+        <div>
+            <label for = "nombre"> Ingrese su nombre</label>
+            <input type ="text" id = "nombre" name = "nombre">
+        </div>
+        <div>
+            <label for = "apellido"> Ingrese su apellido</label>
+            <input type ="apellido" id = "apellido" name = "apellido">
+        </div>
+
+        <div>
+            <label for = "cedula"> Ingrese su cédula</label>
+            <input type ="text" id = "cedula" name = "cedula">
+        </div>
+        <div>
+            <label for = "carrera"> Ingrese su carrera</label>
+            <input type ="carrera" id = "carrera" name = "carrera">
+        </div>
+        <div>
+            <label for = "nacimiento"> Ingrese su fecha de nacimiento</label>
+            <input type ="text" id = "nacimiento" name = "nacimiento">
+        </div>
+
+
+
+        ///Botón que envía la información
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+
+    </form>
+</div>
+</body>
+</html>
